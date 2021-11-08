@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/contactUS.css">
+  
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="/" class="logo"> <i class="fas fa-book"></i> <b>Study</b>Lance </a>
+
+        
+        <i class="fas fa-bars icon-hide" id="bar"></i>
+
+        <nav class="navbar" id="navbars">
+            <i class="fas fa-times icon-hide" id="crosss"></i>
+            <a href="/">HOME</a>
+            <a href="/gatePage">GATE</a>
+            <a href="/rgpv" id="nav-rgpv">RGPV</a>
+            <a href="/donate">DONATE</a>
+            <a href="/aboutUs">ABOUT US</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- Form section starts -->
+
+    <section>
+    <div class="contactUs">
+        <div class="title">
+            <h2>Get in Touch</h2>
+            <p> feel free to drop your feedback and query It will help us to improve our website  </p>
+        </div>
+        <div class="box">
+            <!-- contact form -->
+            <div class="contact form">
+                <h3>Send a message</h3>
+
+                <!-- form filled by the user -->
+
+                <form action="/create-record" method="post">
+
+                    <div class="formBox">
+                        <div class="row50">
+
+                            <!-- Input for first Name of the user -->
+                            <div class="inputBox">
+                                <span>First Name * </span>
+                                <input type="text" placeholder="Enter first name" name="fname" required>
+                            </div>
+
+                            <!-- Input for last name of the user -->
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="enter last name" name="lname" >
+                            </div>
+                        </div>
+                        <div class="row50">
+
+                            <!-- Input for Email of the user -->
+                            <div class="inputBox">
+                                <span> Email *</span>
+                                <input type="email" placeholder="xyz@gmail.com" name="email" required>
+                            </div>
+
+                            <!-- Input for mobile number of the user -->
+                            <div class="inputBox">
+                                <span>Mobile No.</span>
+                                <input type="number" placeholder="789 456 1234" name="phone">
+                            </div>
+                        </div>
+                        <div class="row100">
+
+                            <!-- Input for the message  of the user -->
+                            <div class="inputBox">
+                                <span> Messsage *</span>
+                                <textarea placeholder="Write your message here...." name="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row100">
+
+                            <!--submit user's message and info -->
+
+                            <div class="inputBox">
+
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Information Box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <!--  icons and links -->
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span>
+                        <p>mp nagar bhopal mp <br>INDIA</p>
+                    </div>
+                    <div>
+                        <span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+
+                        <!-- email address for our website -->
+                        <a href="mailto:studylance@gmail.com">studylance@gmail.com</a>
+                    </div>
+                    <div>
+                        <span>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <a href="tel:+917894561230">+91 789 456 1230</a>
+                    </div>
+                    <!-- Social media Links -->
+                    <div>
+                        <ul class="soc">
+                            <li><a href="#" class="fb">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a></li>
+                            <li><a href="#" class="in">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a></li>
+                            <li><a href="#" class="ln">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="image">
+                    <img
+                        src="/Images/Contactus.svg">
+
+                </div>
+            </div>
+        </div>
+    </section> 
+
+      <!-- Footer section starts -->
+    <section class="footer" >
+
+        <div class="box-container">
+    
+          <div class="box1">
+            <h3>Quick Links</h3>
+            <a href="/"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="/rgpv"> <i class="fas fa-arrow-right"></i> RGPV </a>
+            <a href="/donate"> <i class="fas fa-arrow-right"></i> Donate </a>
+            <a href="/contactUs"> <i class="fas fa-arrow-right"></i> Contact Us</a>
+            <a href="/aboutUs"> <i class="fas fa-arrow-right"></i> About Us </a>
+        </div>
+    
+            <div class="box1">
+                <h3>Go to Other Course</h3>
+                <a href="/cs-it"> <i class="fas fa-arrow-right"></i> CS-IT </a>
+                <a href=""> <i class="fas fa-arrow-right"></i> EEE </a>
+                <a href=""> <i class="fas fa-arrow-right"></i> ECE</a>
+                <a href=""> <i class="fas fa-arrow-right"></i> CE </a>
+                <a href=""> <i class="fas fa-arrow-right"></i> ME </a>
+                <a href=""> <i class="fas fa-arrow-right"></i> ChE </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer section ends -->
+
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- custom js file link  -->
+<script src="/js/home.js"></script>
+
+</body>
+
+</html>
