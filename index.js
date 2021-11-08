@@ -2,7 +2,7 @@
 // ---------------------- EXPRESS.js ----------------------
 
 const express = require('express');
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 const path = require('path');
 const mongoose = require('mongoose');
