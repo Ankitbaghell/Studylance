@@ -377,13 +377,7 @@ h2{
         transition: 1s;
       }
        
-      /* .header .header-1 .navbar #nav-rgpv{
-        background: transparent; 
-         border-radius: 0; 
-         color: rgb(238, 238 ,238); 
-         margin-left: -11px;
-         margin-top: 9px;
-      } */
+      
       header .navbar a{
         list-style: none;
         display:block;
@@ -410,10 +404,27 @@ h2{
     }
 
     .container .card{
-        width: 180px;
-        height: 235px;
+        width: 205px;
+        height: 310px;
         left: 0.5rem
     }
+
+    .container .card:hover .content
+   {
+    transform: translateY(0px);
+   }
+
+    
+    .container .card .sci li
+    {transform: translateY(40px);
+    opacity: 1; 
+    }  
+
+    .container .card:hover .sci li
+  {
+    transform: translateY(40px);
+  }
+
 
 }
  

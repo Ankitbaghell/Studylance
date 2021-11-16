@@ -25,19 +25,19 @@ module.exports.csit = function(req,res){
     return res.render('cs_it');
 }
 module.exports.eee = function(req,res){
-    return res.render('cs_it');
+    return res.render('electrical-eng');
 }
 module.exports.ece = function(req,res){
-    return res.render('cs_it');
+    return res.render('ele-&-com');
 }
 module.exports.me = function(req,res){
-    return res.render('cs_it');
+    return res.render('mech-eng');
 }
 module.exports.ce = function(req,res){
-    return res.render('cs_it');
+    return res.render('civil-eng');
 }
 module.exports.che = function(req,res){
-    return res.render('cs_it');
+    return res.render('chem-eng');
 }
 
 

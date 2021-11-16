@@ -2,16 +2,21 @@
 // ---------------------- EXPRESS.js ----------------------
 
 const express = require('express');
-const port = process.env.PORT || 9000;
+
+const dotenv =require("dotenv");
 
 const path = require('path');
 const mongoose = require('mongoose');
 
-const DB ='mongodb+srv://Ankitbaghel:ankitbhai@cluster0.ldwe5.mongodb.net/StudylanceDB?retryWrites=true&w=majority';
+dotenv.config({path:'./config.env'});
 
+const PORT = process.env.PORT || 9000;
+
+const DB = process.env.DATABASE;
+ 
 mongoose.connect(DB).then(()=> {
-      console.log("connection sucessful");
-}).catch((err) => console.log("no connection taken",err));
+      console.log("connection sucessful with DB");
+}).catch((err) => console.log("no connection taken with DB",err));
 
 // const db = require('./config/mongoose');   // include mongoose.js file
 // const db2 = require('./config/mongoose2');   // include mongoose2.js file
@@ -38,8 +43,8 @@ app.set('view engine','ejs');             // We are telling Express That we are 
 app.set('views',path.join(__dirname,'views'));  // we are telling to put our view in views folder
 
 
-app.listen(port,function(err){
+app.listen(PORT,function(err){
         if(err){console.log(`Error in running the server : ${err}`);}
-       console.log(`Server is running on port : ${port}`); 
+       console.log(`Server is running on port : ${PORT}`); 
  });
 
